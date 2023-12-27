@@ -2,25 +2,25 @@
 version: "3.8"
 services:
   movies:
-    image: kiranchamala/paytmmovies:latest
+    image: kiranchamala/projectmovies:latest
     ports:
       - 91:80
     deploy:
       replicas: 3
   train:
-    image: kiranchamala/paytmtrain:latest
+    image: kiranchamala/projecttrain:latest
     ports:
       - 92:80
     deploy:
       replicas: 3
   recharge:
-    image: kiranchamala/paytmrecharge:latest
+    image: kiranchamala/projectrecharge:latest
     ports:
       - 93:80
     deploy:
       replicas: 3
   dth:
-    image: kiranchamala/paytmdth:latest
+    image: kiranchamala/projectdth:latest
     ports:
       - 94:80
     deploy:
